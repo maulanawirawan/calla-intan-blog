@@ -1,0 +1,22 @@
+{
+    "name": "Calla & Intan - Growing Up Together",
+    "short_name": "Calla & Intan",
+    "description": "A heartfelt family blog documenting beautiful moments across generations",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ee5a6b",
+    "theme_color": "#ee5a6b",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./images/in5.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./images/in5.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}
