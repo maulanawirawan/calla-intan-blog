@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Calla & Intan - Growing Up Together | Family Blog & Memories</title>
-    <meta name="description" content="A heartfelt family blog documenting the beautiful journey of Calla's growth alongside Intan's childhood memories. Discover milestones, traditions, and precious moments across generations.">
-    <meta name="keywords" content="family blog, baby milestones, childhood memories, Calla, Intan, family traditions, growing up, parenting blog">
+    <title>Calla & Intan - Growing Up Together | Ultimate Family Blog</title>
+    <meta name="description" content="A heartfelt interactive family blog documenting the beautiful journey of Calla's growth alongside Intan's childhood memories. Modern, dynamic, and engaging.">
+    <meta name="keywords" content="family blog, baby milestones, childhood memories, Calla, Intan, family traditions, growing up, interactive blog">
     <meta name="author" content="Intan">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Calla & Intan - Growing Up Together">
-    <meta property="og:description" content="A heartfelt family blog documenting beautiful moments across generations">
-    <meta property="og:image" content="./images/in5.jpg">
-    <meta property="og:url" content="https://calla-intan.netlify.app">
+    <meta property="og:description" content="An interactive family blog documenting beautiful moments across generations">
+    <meta property="og:image" content="https://maulanawirawan.github.io/calla-intan-blog/images/in5.jpg">
+    <meta property="og:url" content="https://maulanawirawan.github.io/calla-intan-blog">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Calla & Intan Blog">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Calla & Intan - Growing Up Together">
-    <meta name="twitter:description" content="A heartfelt family blog documenting beautiful moments across generations">
-    <meta name="twitter:image" content="./images/in5.jpg">
+    <meta name="twitter:description" content="An interactive family blog documenting beautiful moments across generations">
+    <meta name="twitter:image" content="https://maulanawirawan.github.io/calla-intan-blog/images/in5.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./images/in5.jpg">
@@ -42,7 +41,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -53,27 +52,19 @@
         "@context": "https://schema.org",
         "@type": "Blog",
         "name": "Calla & Intan - Growing Up Together",
-        "description": "A heartfelt family blog documenting beautiful moments across generations",
-        "url": "https://calla-intan.netlify.app",
+        "description": "An interactive family blog documenting beautiful moments across generations",
+        "url": "https://maulanawirawan.github.io/calla-intan-blog",
         "author": {
             "@type": "Person",
             "name": "Intan"
-        },
-        "publisher": {
-            "@type": "Person",
-            "name": "Intan"
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://calla-intan.netlify.app"
         }
     }
     </script>
     
     <style>
-        /* ===== MODERN CSS CUSTOM PROPERTIES ===== */
+        /* ===== ULTIMATE CSS VARIABLES ===== */
         :root {
-            /* Colors */
+            /* Primary Colors */
             --primary-50: #fef7f7;
             --primary-100: #feeaea;
             --primary-200: #fdd9db;
@@ -85,6 +76,7 @@
             --primary-800: #982a3b;
             --primary-900: #7f2937;
             
+            /* Secondary Colors */
             --secondary-50: #fef7ff;
             --secondary-100: #fdeeff;
             --secondary-200: #fdd9f7;
@@ -96,6 +88,19 @@
             --secondary-800: #982a6a;
             --secondary-900: #7f2957;
             
+            /* Accent Colors */
+            --accent-50: #fff7ed;
+            --accent-100: #ffedd5;
+            --accent-200: #fed7aa;
+            --accent-300: #fdba74;
+            --accent-400: #fb923c;
+            --accent-500: #f97316;
+            --accent-600: #ea580c;
+            --accent-700: #c2410c;
+            --accent-800: #9a3412;
+            --accent-900: #7c2d12;
+            
+            /* Neutral Colors */
             --neutral-50: #fafafa;
             --neutral-100: #f5f5f5;
             --neutral-200: #e5e5e5;
@@ -107,11 +112,17 @@
             --neutral-800: #262626;
             --neutral-900: #171717;
             
+            /* Success/Error Colors */
+            --success-500: #10b981;
+            --error-500: #ef4444;
+            --warning-500: #f59e0b;
+            --info-500: #3b82f6;
+            
             /* Typography */
             --font-display: 'Playfair Display', serif;
             --font-body: 'Inter', sans-serif;
             
-            /* Spacing */
+            /* Spacing System */
             --space-px: 1px;
             --space-0: 0;
             --space-1: 0.25rem;
@@ -127,13 +138,19 @@
             --space-20: 5rem;
             --space-24: 6rem;
             --space-32: 8rem;
+            --space-40: 10rem;
+            --space-48: 12rem;
+            --space-56: 14rem;
+            --space-64: 16rem;
             
-            /* Border radius */
-            --radius-sm: 0.375rem;
-            --radius-md: 0.5rem;
-            --radius-lg: 0.75rem;
-            --radius-xl: 1rem;
-            --radius-2xl: 1.5rem;
+            /* Border Radius */
+            --radius-none: 0;
+            --radius-sm: 0.125rem;
+            --radius-md: 0.375rem;
+            --radius-lg: 0.5rem;
+            --radius-xl: 0.75rem;
+            --radius-2xl: 1rem;
+            --radius-3xl: 1.5rem;
             --radius-full: 9999px;
             
             /* Shadows */
@@ -142,13 +159,29 @@
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            --gradient-sunset: linear-gradient(135deg, var(--accent-400), var(--primary-500));
+            --gradient-ocean: linear-gradient(135deg, var(--info-500), var(--primary-500));
+            --gradient-dark: linear-gradient(135deg, var(--neutral-800), var(--neutral-900));
             
             /* Transitions */
+            --transition-none: none;
             --transition-fast: 150ms ease-in-out;
             --transition-base: 250ms ease-in-out;
             --transition-slow: 350ms ease-in-out;
+            --transition-slower: 500ms ease-in-out;
             
-            /* Z-index */
+            /* Z-index Scale */
+            --z-auto: auto;
+            --z-0: 0;
+            --z-10: 10;
+            --z-20: 20;
+            --z-30: 30;
+            --z-40: 40;
+            --z-50: 50;
             --z-dropdown: 1000;
             --z-sticky: 1020;
             --z-fixed: 1030;
@@ -156,9 +189,19 @@
             --z-popover: 1050;
             --z-tooltip: 1060;
             --z-top: 1070;
+            
+            /* Animation Durations */
+            --duration-75: 75ms;
+            --duration-100: 100ms;
+            --duration-150: 150ms;
+            --duration-200: 200ms;
+            --duration-300: 300ms;
+            --duration-500: 500ms;
+            --duration-700: 700ms;
+            --duration-1000: 1000ms;
         }
         
-        /* ===== MODERN RESET ===== */
+        /* ===== MODERN CSS RESET ===== */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
@@ -168,6 +211,9 @@
         html {
             scroll-behavior: smooth;
             font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
         }
         
         body {
@@ -179,12 +225,21 @@
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
         }
         
-        img, video {
+        img, picture, video, canvas, svg {
+            display: block;
             max-width: 100%;
             height: auto;
-            display: block;
+        }
+        
+        input, button, textarea, select {
+            font: inherit;
+        }
+        
+        p, h1, h2, h3, h4, h5, h6 {
+            overflow-wrap: break-word;
         }
         
         a {
@@ -199,6 +254,10 @@
             font-family: inherit;
         }
         
+        ul, ol {
+            list-style: none;
+        }
+        
         /* ===== UTILITY CLASSES ===== */
         .container {
             width: 100%;
@@ -206,6 +265,12 @@
             margin: 0 auto;
             padding: 0 var(--space-6);
         }
+        
+        .container-sm { max-width: 640px; }
+        .container-md { max-width: 768px; }
+        .container-lg { max-width: 1024px; }
+        .container-xl { max-width: 1280px; }
+        .container-2xl { max-width: 1536px; }
         
         .sr-only {
             position: absolute;
@@ -221,11 +286,19 @@
         
         .glass {
             background: rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.18);
         }
         
-        /* ===== COMPONENTS ===== */
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* ===== BUTTON COMPONENTS ===== */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -233,14 +306,17 @@
             gap: var(--space-2);
             padding: var(--space-3) var(--space-6);
             border-radius: var(--radius-full);
-            font-weight: 500;
+            font-weight: 600;
             font-size: 0.875rem;
+            line-height: 1;
             transition: var(--transition-base);
             text-decoration: none;
             border: 1px solid transparent;
             cursor: pointer;
             position: relative;
             overflow: hidden;
+            white-space: nowrap;
+            user-select: none;
         }
         
         .btn::before {
@@ -250,7 +326,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transition: var(--transition-base);
         }
         
@@ -258,15 +334,19 @@
             left: 100%;
         }
         
+        .btn:active {
+            transform: scale(0.98);
+        }
+        
         .btn-primary {
-            background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+            background: var(--gradient-primary);
             color: white;
             box-shadow: var(--shadow-md);
         }
         
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-xl);
         }
         
         .btn-secondary {
@@ -278,6 +358,27 @@
         .btn-secondary:hover {
             background: var(--primary-50);
             border-color: var(--primary-400);
+            transform: translateY(-1px);
+        }
+        
+        .btn-accent {
+            background: var(--gradient-sunset);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .btn-ghost {
+            background: transparent;
+            color: var(--neutral-700);
+        }
+        
+        .btn-ghost:hover {
+            background: var(--neutral-100);
         }
         
         .btn-sm {
@@ -290,6 +391,11 @@
             font-size: 1rem;
         }
         
+        .btn-xl {
+            padding: var(--space-5) var(--space-10);
+            font-size: 1.125rem;
+        }
+        
         /* ===== LOADING SCREEN ===== */
         .loading-screen {
             position: fixed;
@@ -297,16 +403,17 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            background: var(--gradient-primary);
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: var(--z-top);
-            transition: var(--transition-slow);
+            transition: opacity var(--transition-slower), visibility var(--transition-slower);
         }
         
         .loading-screen.hidden {
             opacity: 0;
+            visibility: hidden;
             pointer-events: none;
         }
         
@@ -316,32 +423,50 @@
         }
         
         .loading-spinner {
-            width: 60px;
-            height: 60px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-top: 3px solid white;
+            width: 80px;
+            height: 80px;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top: 4px solid white;
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin: 0 auto var(--space-4);
+            margin: 0 auto var(--space-6);
         }
         
         .loading-text {
             font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: var(--space-2);
+            animation: pulse 2s ease-in-out infinite alternate;
+        }
+        
+        .loading-subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+            animation: fadeInOut 3s ease-in-out infinite;
         }
         
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
         
-        /* ===== HEADER ===== */
+        @keyframes pulse {
+            from { opacity: 0.7; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+        
+        /* ===== HEADER SECTION ===== */
         .header {
             position: relative;
             min-height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, var(--primary-500) 0%, var(--secondary-500) 100%);
+            background: var(--gradient-primary);
             overflow: hidden;
         }
         
@@ -356,6 +481,59 @@
             animation: float 20s ease-in-out infinite;
         }
         
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to top, var(--neutral-50), transparent);
+        }
+        
+        .header-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: floatParticle 15s linear infinite;
+        }
+        
+        .particle:nth-child(1) { left: 10%; animation-delay: 0s; width: 10px; height: 10px; }
+        .particle:nth-child(2) { left: 20%; animation-delay: 2s; width: 6px; height: 6px; }
+        .particle:nth-child(3) { left: 30%; animation-delay: 4s; width: 8px; height: 8px; }
+        .particle:nth-child(4) { left: 40%; animation-delay: 6s; width: 12px; height: 12px; }
+        .particle:nth-child(5) { left: 50%; animation-delay: 8s; width: 4px; height: 4px; }
+        .particle:nth-child(6) { left: 60%; animation-delay: 10s; width: 14px; height: 14px; }
+        .particle:nth-child(7) { left: 70%; animation-delay: 12s; width: 7px; height: 7px; }
+        .particle:nth-child(8) { left: 80%; animation-delay: 14s; width: 9px; height: 9px; }
+        .particle:nth-child(9) { left: 90%; animation-delay: 16s; width: 11px; height: 11px; }
+        
+        @keyframes floatParticle {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
         .header-content {
             position: relative;
             z-index: 2;
@@ -365,32 +543,48 @@
         
         .header-title {
             font-family: var(--font-display);
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 700;
-            margin-bottom: var(--space-4);
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 800;
+            margin-bottom: var(--space-6);
             line-height: 1.1;
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            animation: slideInUp 1s ease-out 0.5s both;
         }
         
         .header-subtitle {
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            margin-bottom: var(--space-8);
-            opacity: 0.9;
-            max-width: 600px;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            margin-bottom: var(--space-10);
+            opacity: 0.95;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            font-weight: 400;
+            animation: slideInUp 1s ease-out 0.7s both;
         }
         
         .header-cta {
             display: flex;
-            gap: var(--space-4);
+            gap: var(--space-6);
             justify-content: center;
             flex-wrap: wrap;
+            animation: slideInUp 1s ease-out 0.9s both;
         }
         
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(1deg); }
+            66% { transform: translateY(-10px) rotate(-1deg); }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         /* ===== NAVIGATION ===== */
@@ -401,13 +595,14 @@
             width: 100%;
             z-index: var(--z-sticky);
             transition: var(--transition-base);
-            padding: var(--space-4) 0;
+            padding: var(--space-5) 0;
         }
         
         .navbar.scrolled {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
-            box-shadow: var(--shadow-md);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-lg);
             padding: var(--space-3) 0;
         }
         
@@ -419,8 +614,8 @@
         
         .navbar-logo {
             font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-size: 1.75rem;
+            font-weight: 800;
             color: white;
             transition: var(--transition-base);
         }
@@ -431,10 +626,17 @@
         
         .navbar-logo span {
             color: var(--primary-300);
+            background: linear-gradient(135deg, var(--primary-300), var(--secondary-300));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .navbar.scrolled .navbar-logo span {
-            color: var(--primary-600);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .navbar-menu {
@@ -449,31 +651,43 @@
             font-weight: 500;
             color: rgba(255, 255, 255, 0.9);
             transition: var(--transition-base);
-            padding: var(--space-2) 0;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-lg);
         }
         
         .navbar.scrolled .navbar-link {
             color: var(--neutral-700);
         }
         
-        .navbar-link::after {
+        .navbar-link::before {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
             width: 0;
             height: 2px;
             background: var(--primary-300);
             transition: var(--transition-base);
+            transform: translateX(-50%);
         }
         
-        .navbar.scrolled .navbar-link::after {
+        .navbar.scrolled .navbar-link::before {
             background: var(--primary-600);
         }
         
-        .navbar-link:hover::after,
-        .navbar-link.active::after {
-            width: 100%;
+        .navbar-link:hover::before,
+        .navbar-link.active::before {
+            width: 80%;
+        }
+        
+        .navbar-link:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .navbar.scrolled .navbar-link:hover {
+            color: var(--primary-600);
+            background: var(--primary-50);
         }
         
         .navbar-toggle {
@@ -481,63 +695,158 @@
             color: white;
             font-size: 1.5rem;
             transition: var(--transition-base);
+            padding: var(--space-2);
+            border-radius: var(--radius-md);
         }
         
         .navbar.scrolled .navbar-toggle {
             color: var(--neutral-800);
         }
         
+        .navbar-toggle:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .navbar.scrolled .navbar-toggle:hover {
+            background: var(--neutral-100);
+        }
+        
+        /* ===== SEARCH BAR ===== */
+        .search-container {
+            position: relative;
+            display: none;
+        }
+        
+        .search-input {
+            width: 250px;
+            padding: var(--space-2) var(--space-4) var(--space-2) var(--space-10);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 0.875rem;
+            transition: var(--transition-base);
+        }
+        
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .navbar.scrolled .search-input {
+            background: var(--neutral-100);
+            color: var(--neutral-800);
+            border-color: var(--neutral-300);
+        }
+        
+        .navbar.scrolled .search-input::placeholder {
+            color: var(--neutral-500);
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: var(--space-3);
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.875rem;
+        }
+        
+        .navbar.scrolled .search-icon {
+            color: var(--neutral-500);
+        }
+        
         /* ===== SECTIONS ===== */
         .section {
-            padding: var(--space-20) 0;
+            padding: var(--space-24) 0;
             position: relative;
+        }
+        
+        .section:nth-child(even) {
+            background: linear-gradient(135deg, var(--neutral-50), var(--primary-50));
         }
         
         .section-header {
             text-align: center;
-            margin-bottom: var(--space-16);
+            margin-bottom: var(--space-20);
+        }
+        
+        .section-badge {
+            display: inline-block;
+            padding: var(--space-2) var(--space-4);
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: var(--radius-full);
+            margin-bottom: var(--space-4);
         }
         
         .section-title {
             font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
             color: var(--neutral-800);
-            margin-bottom: var(--space-4);
-            line-height: 1.2;
+            margin-bottom: var(--space-6);
+            line-height: 1.1;
+            background: linear-gradient(135deg, var(--neutral-800), var(--primary-700));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .section-subtitle {
-            font-size: 1.125rem;
+            font-size: 1.25rem;
             color: var(--neutral-600);
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
+            line-height: 1.6;
         }
         
         /* ===== MILESTONES SECTION ===== */
         .milestones-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: var(--space-8);
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-10);
         }
         
         .milestone-card {
             background: white;
-            border-radius: var(--radius-xl);
+            border-radius: var(--radius-3xl);
             overflow: hidden;
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-lg);
             transition: var(--transition-base);
             position: relative;
+            cursor: pointer;
+            border: 1px solid var(--neutral-200);
+        }
+        
+        .milestone-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition-base);
+            z-index: 1;
+        }
+        
+        .milestone-card:hover::before {
+            opacity: 0.05;
         }
         
         .milestone-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-2xl);
         }
         
         .milestone-image {
             position: relative;
-            height: 240px;
+            height: 280px;
             overflow: hidden;
         }
         
@@ -545,41 +854,79 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: var(--transition-slow);
+            transition: var(--transition-slower);
         }
         
         .milestone-card:hover .milestone-image img {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
         
         .milestone-age {
             position: absolute;
-            top: var(--space-4);
-            left: var(--space-4);
-            background: var(--primary-600);
+            top: var(--space-5);
+            left: var(--space-5);
+            background: var(--gradient-primary);
             color: white;
-            padding: var(--space-2) var(--space-3);
+            padding: var(--space-3) var(--space-4);
             border-radius: var(--radius-full);
             font-size: 0.75rem;
-            font-weight: 600;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: var(--shadow-lg);
+            z-index: 2;
+        }
+        
+        .milestone-heart {
+            position: absolute;
+            top: var(--space-5);
+            right: var(--space-5);
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-500);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition-base);
+            z-index: 2;
+        }
+        
+        .milestone-heart:hover {
+            background: var(--primary-500);
+            color: white;
+            transform: scale(1.1);
         }
         
         .milestone-content {
-            padding: var(--space-6);
+            padding: var(--space-8);
+            position: relative;
+            z-index: 2;
         }
         
         .milestone-title {
             font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
+            font-size: 1.5rem;
+            font-weight: 700;
             color: var(--neutral-800);
-            margin-bottom: var(--space-3);
+            margin-bottom: var(--space-4);
+            line-height: 1.3;
         }
         
         .milestone-text {
             color: var(--neutral-600);
-            margin-bottom: var(--space-4);
+            margin-bottom: var(--space-6);
             line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .milestone-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         
         .milestone-date {
@@ -588,32 +935,106 @@
             gap: var(--space-2);
             color: var(--neutral-500);
             font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .milestone-share {
+            display: flex;
+            gap: var(--space-2);
+        }
+        
+        .share-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--neutral-100);
+            color: var(--neutral-600);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+        
+        .share-btn:hover {
+            background: var(--primary-500);
+            color: white;
+            transform: translateY(-1px);
         }
         
         /* ===== GALLERY SECTION ===== */
         .gallery-section {
-            background: var(--neutral-100);
+            background: linear-gradient(135deg, var(--neutral-100), var(--primary-50));
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gallery-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, var(--primary-200), transparent);
+            opacity: 0.3;
+        }
+        
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            margin-bottom: var(--space-16);
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: var(--space-3) var(--space-6);
+            border-radius: var(--radius-full);
+            background: white;
+            color: var(--neutral-600);
+            font-weight: 500;
+            border: 1px solid var(--neutral-300);
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
         }
         
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-6);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
         }
         
         .gallery-item {
             position: relative;
-            border-radius: var(--radius-lg);
+            border-radius: var(--radius-2xl);
             overflow: hidden;
             cursor: pointer;
             aspect-ratio: 4/3;
+            background: var(--neutral-200);
+            transition: var(--transition-base);
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
         }
         
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: var(--transition-base);
+            transition: var(--transition-slower);
         }
         
         .gallery-overlay {
@@ -631,59 +1052,90 @@
         }
         
         .gallery-item:hover .gallery-overlay {
-            opacity: 0.8;
+            opacity: 0.9;
         }
         
         .gallery-item:hover img {
             transform: scale(1.1);
         }
         
-        .gallery-zoom {
-            background: white;
-            color: var(--primary-600);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
+        .gallery-actions {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
+            gap: var(--space-4);
             transform: scale(0);
             transition: var(--transition-base);
         }
         
-        .gallery-item:hover .gallery-zoom {
+        .gallery-item:hover .gallery-actions {
             transform: scale(1);
+        }
+        
+        .gallery-btn {
+            width: 50px;
+            height: 50px;
+            background: white;
+            color: var(--primary-600);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+        
+        .gallery-btn:hover {
+            background: var(--primary-600);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: var(--space-6) var(--space-5) var(--space-5);
+            transform: translateY(100%);
+            transition: var(--transition-base);
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
         }
         
         /* ===== BLOG SECTION ===== */
         .blog-grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: var(--space-12);
+            gap: var(--space-16);
         }
         
         .blog-posts {
             display: flex;
             flex-direction: column;
-            gap: var(--space-12);
+            gap: var(--space-16);
         }
         
         .blog-post {
             background: white;
-            border-radius: var(--radius-xl);
+            border-radius: var(--radius-3xl);
             overflow: hidden;
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-lg);
             transition: var(--transition-base);
+            border: 1px solid var(--neutral-200);
         }
         
         .blog-post:hover {
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-2px);
         }
         
         .post-image {
             position: relative;
-            height: 300px;
+            height: 350px;
             overflow: hidden;
         }
         
@@ -691,87 +1143,160 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: var(--transition-slower);
+        }
+        
+        .blog-post:hover .post-image img {
+            transform: scale(1.05);
         }
         
         .post-category {
             position: absolute;
-            top: var(--space-4);
-            left: var(--space-4);
-            background: var(--primary-600);
+            top: var(--space-5);
+            left: var(--space-5);
+            background: var(--gradient-primary);
             color: white;
-            padding: var(--space-2) var(--space-3);
+            padding: var(--space-2) var(--space-4);
             border-radius: var(--radius-full);
             font-size: 0.75rem;
-            font-weight: 600;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .post-bookmark {
+            position: absolute;
+            top: var(--space-5);
+            right: var(--space-5);
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--neutral-600);
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+        
+        .post-bookmark:hover {
+            background: var(--primary-500);
+            color: white;
+            transform: scale(1.1);
         }
         
         .post-content {
-            padding: var(--space-6);
+            padding: var(--space-8);
         }
         
         .post-meta {
             display: flex;
-            gap: var(--space-4);
-            margin-bottom: var(--space-4);
+            gap: var(--space-6);
+            margin-bottom: var(--space-5);
             color: var(--neutral-500);
             font-size: 0.875rem;
+            font-weight: 500;
         }
         
         .post-meta-item {
             display: flex;
             align-items: center;
-            gap: var(--space-1);
+            gap: var(--space-2);
         }
         
         .post-title {
             font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 1.75rem;
+            font-weight: 700;
             color: var(--neutral-800);
-            margin-bottom: var(--space-3);
+            margin-bottom: var(--space-4);
             line-height: 1.3;
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+        
+        .post-title:hover {
+            color: var(--primary-600);
         }
         
         .post-excerpt {
             color: var(--neutral-600);
             line-height: 1.7;
-            margin-bottom: var(--space-6);
+            margin-bottom: var(--space-8);
+            font-size: 1rem;
         }
         
         .post-footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-top: var(--space-4);
+            padding-top: var(--space-6);
             border-top: 1px solid var(--neutral-200);
         }
         
         .post-author {
             display: flex;
             align-items: center;
-            gap: var(--space-3);
+            gap: var(--space-4);
         }
         
         .author-avatar {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             object-fit: cover;
+            border: 2px solid var(--primary-200);
+        }
+        
+        .author-info {
+            display: flex;
+            flex-direction: column;
         }
         
         .author-name {
-            font-weight: 500;
-            color: var(--neutral-700);
+            font-weight: 600;
+            color: var(--neutral-800);
+        }
+        
+        .author-role {
+            font-size: 0.875rem;
+            color: var(--neutral-500);
+        }
+        
+        .post-actions {
+            display: flex;
+            gap: var(--space-2);
+        }
+        
+        .post-action {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--neutral-100);
+            color: var(--neutral-600);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+        
+        .post-action:hover {
+            background: var(--primary-500);
+            color: white;
+            transform: translateY(-1px);
         }
         
         /* ===== VIDEO SECTION ===== */
         .video-container {
             position: relative;
-            border-radius: var(--radius-xl);
+            border-radius: var(--radius-3xl);
             overflow: hidden;
-            margin-bottom: var(--space-6);
+            margin-bottom: var(--space-8);
             background: var(--neutral-900);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-xl);
         }
         
         .video-container video {
@@ -780,28 +1305,74 @@
             display: block;
         }
         
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition-base);
+            cursor: pointer;
+        }
+        
+        .video-container:hover .video-overlay {
+            opacity: 1;
+        }
+        
+        .video-play-btn {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-600);
+            font-size: 2rem;
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition-base);
+        }
+        
+        .video-play-btn:hover {
+            transform: scale(1.1);
+            background: var(--primary-600);
+            color: white;
+        }
+        
         /* ===== SIDEBAR ===== */
         .sidebar {
             display: flex;
             flex-direction: column;
-            gap: var(--space-8);
+            gap: var(--space-10);
         }
         
         .widget {
             background: white;
-            border-radius: var(--radius-xl);
-            padding: var(--space-6);
-            box-shadow: var(--shadow-md);
+            border-radius: var(--radius-3xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--neutral-200);
+            transition: var(--transition-base);
+        }
+        
+        .widget:hover {
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-2px);
         }
         
         .widget-title {
             font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
+            font-size: 1.5rem;
+            font-weight: 700;
             color: var(--neutral-800);
-            margin-bottom: var(--space-4);
+            margin-bottom: var(--space-6);
             position: relative;
-            padding-bottom: var(--space-2);
+            padding-bottom: var(--space-3);
         }
         
         .widget-title::after {
@@ -809,9 +1380,9 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 40px;
-            height: 3px;
-            background: var(--primary-600);
+            width: 50px;
+            height: 4px;
+            background: var(--gradient-primary);
             border-radius: var(--radius-full);
         }
         
@@ -820,69 +1391,133 @@
         }
         
         .profile-image {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            margin: 0 auto var(--space-4);
-            border: 4px solid var(--primary-100);
+            margin: 0 auto var(--space-6);
+            border: 4px solid var(--primary-200);
             object-fit: cover;
+            transition: var(--transition-base);
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+            border-color: var(--primary-400);
         }
         
         .about-text {
             color: var(--neutral-600);
             line-height: 1.7;
-            margin-bottom: var(--space-4);
+            margin-bottom: var(--space-6);
+            font-size: 0.95rem;
         }
         
         .social-links {
             display: flex;
             justify-content: center;
-            gap: var(--space-3);
+            gap: var(--space-4);
+            margin-top: var(--space-6);
         }
         
         .social-link {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background: var(--primary-100);
             color: var(--primary-600);
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 1.25rem;
             transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            transform: scale(0);
+            transition: var(--transition-base);
+            border-radius: 50%;
+        }
+        
+        .social-link:hover::before {
+            transform: scale(1);
         }
         
         .social-link:hover {
-            background: var(--primary-600);
             color: white;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .social-link i {
+            position: relative;
+            z-index: 1;
         }
         
         /* ===== FOOTER ===== */
         .footer {
-            background: var(--neutral-900);
+            background: var(--gradient-dark);
             color: var(--neutral-300);
-            padding: var(--space-20) 0 var(--space-8);
+            padding: var(--space-24) 0 var(--space-10);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='50' cy='50' r='4'/%3E%3Ccircle cx='10' cy='10' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .footer-content {
+            position: relative;
+            z-index: 1;
         }
         
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-12);
-            margin-bottom: var(--space-12);
+            gap: var(--space-16);
+            margin-bottom: var(--space-16);
         }
         
         .footer-widget h3 {
             color: white;
             font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: var(--space-4);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-6);
+            position: relative;
+            padding-bottom: var(--space-3);
+        }
+        
+        .footer-widget h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-full);
         }
         
         .footer-text {
             line-height: 1.7;
-            margin-bottom: var(--space-4);
+            margin-bottom: var(--space-6);
+            color: var(--neutral-400);
         }
         
         .footer-links {
@@ -890,42 +1525,111 @@
         }
         
         .footer-links li {
-            margin-bottom: var(--space-2);
+            margin-bottom: var(--space-3);
         }
         
         .footer-links a {
             color: var(--neutral-400);
             transition: var(--transition-base);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-1) 0;
         }
         
         .footer-links a:hover {
             color: var(--primary-400);
+            transform: translateX(5px);
+        }
+        
+        .footer-links a i {
+            font-size: 0.875rem;
+            color: var(--primary-500);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: var(--space-3);
+            margin-top: var(--space-6);
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: var(--space-4);
+            border: 1px solid var(--neutral-700);
+            border-radius: var(--radius-lg);
+            background: var(--neutral-800);
+            color: white;
+            font-size: 0.875rem;
+            transition: var(--transition-base);
+        }
+        
+        .newsletter-input:focus {
+            outline: none;
+            border-color: var(--primary-500);
+            box-shadow: 0 0 0 3px rgba(238, 90, 107, 0.2);
+        }
+        
+        .newsletter-input::placeholder {
+            color: var(--neutral-500);
         }
         
         .footer-bottom {
             text-align: center;
-            padding-top: var(--space-8);
+            padding-top: var(--space-10);
             border-top: 1px solid var(--neutral-800);
             color: var(--neutral-500);
+            position: relative;
+            z-index: 1;
         }
         
+        .footer-bottom p {
+            margin-bottom: var(--space-4);
+        }
+        
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+        }
+        
+        .footer-social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--neutral-800);
+            color: var(--neutral-400);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-base);
+        }
+        
+        .footer-social-link:hover {
+            background: var(--primary-600);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* ===== BACK TO TOP ===== */
         .back-to-top {
             position: fixed;
-            bottom: var(--space-8);
-            right: var(--space-8);
-            width: 50px;
-            height: 50px;
-            background: var(--primary-600);
+            bottom: var(--space-10);
+            right: var(--space-10);
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: var(--shadow-lg);
+            font-size: 1.25rem;
+            box-shadow: var(--shadow-xl);
             cursor: pointer;
             transition: var(--transition-base);
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(100px);
             z-index: var(--z-fixed);
         }
         
@@ -935,8 +1639,8 @@
         }
         
         .back-to-top:hover {
-            background: var(--primary-700);
-            transform: translateY(-2px);
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: var(--shadow-2xl);
         }
         
         /* ===== LIGHTBOX ===== */
@@ -946,7 +1650,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.95);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -954,6 +1658,8 @@
             opacity: 0;
             visibility: hidden;
             transition: var(--transition-base);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
         
         .lightbox.active {
@@ -962,26 +1668,310 @@
         }
         
         .lightbox-content {
-            max-width: 90vw;
-            max-height: 90vh;
+            max-width: 95vw;
+            max-height: 95vh;
             position: relative;
+            animation: lightboxZoomIn 0.3s ease-out;
         }
         
         .lightbox-image {
             max-width: 100%;
             max-height: 100%;
-            border-radius: var(--radius-lg);
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-2xl);
         }
         
         .lightbox-close {
             position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 40px;
-            height: 40px;
+            top: -60px;
+            right: -60px;
+            width: 50px;
+            height: 50px;
             background: white;
             color: var(--neutral-700);
             border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .lightbox-close:hover {
+            background: var(--primary-600);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--neutral-700);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .lightbox-nav:hover {
+            background: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .lightbox-prev {
+            left: -80px;
+        }
+        
+        .lightbox-next {
+            right: -80px;
+        }
+        
+        .lightbox-counter {
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--neutral-700);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        @keyframes lightboxZoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* ===== NOTIFICATION SYSTEM ===== */
+        .notification-container {
+            position: fixed;
+            top: var(--space-6);
+            right: var(--space-6);
+            z-index: var(--z-tooltip);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+        }
+        
+        .notification {
+            background: white;
+            padding: var(--space-4) var(--space-6);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            border-left: 4px solid var(--primary-500);
+            transform: translateX(400px);
+            transition: var(--transition-base);
+            max-width: 400px;
+            animation: slideInNotification 0.3s ease-out forwards;
+        }
+        
+        .notification.success {
+            border-left-color: var(--success-500);
+        }
+        
+        .notification.error {
+            border-left-color: var(--error-500);
+        }
+        
+        .notification.warning {
+            border-left-color: var(--warning-500);
+        }
+        
+        .notification-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-2);
+        }
+        
+        .notification-title {
+            font-weight: 600;
+            color: var(--neutral-800);
+        }
+        
+        .notification-close {
+            color: var(--neutral-500);
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+        
+        .notification-close:hover {
+            color: var(--neutral-700);
+        }
+        
+        .notification-message {
+            color: var(--neutral-600);
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        
+        @keyframes slideInNotification {
+            to {
+                transform: translateX(0);
+            }
+        }
+        
+        /* ===== PWA INSTALL PROMPT ===== */
+        .pwa-install {
+            position: fixed;
+            bottom: var(--space-24);
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: var(--space-6) var(--space-8);
+            border-radius: var(--radius-3xl);
+            box-shadow: var(--shadow-2xl);
+            display: none;
+            align-items: center;
+            gap: var(--space-4);
+            max-width: 90vw;
+            z-index: var(--z-fixed);
+            border: 1px solid var(--neutral-200);
+        }
+        
+        .pwa-install.show {
+            display: flex;
+            animation: slideUpBounce 0.5s ease-out;
+        }
+        
+        .pwa-install-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .pwa-install-content {
+            flex: 1;
+        }
+        
+        .pwa-install-title {
+            font-weight: 600;
+            color: var(--neutral-800);
+            margin-bottom: var(--space-1);
+        }
+        
+        .pwa-install-text {
+            color: var(--neutral-600);
+            font-size: 0.875rem;
+        }
+        
+        .pwa-install-actions {
+            display: flex;
+            gap: var(--space-3);
+        }
+        
+        .pwa-install-close {
+            background: var(--neutral-200);
+            color: var(--neutral-600);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+        
+        .pwa-install-close:hover {
+            background: var(--neutral-300);
+        }
+        
+        @keyframes slideUpBounce {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(100px);
+            }
+            60% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+        
+        /* ===== MODAL SYSTEM ===== */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: var(--z-modal);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-base);
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: var(--radius-3xl);
+            padding: var(--space-10);
+            max-width: 500px;
+            width: 90vw;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: modalSlideIn 0.3s ease-out;
+        }
+        
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-6);
+        }
+        
+        .modal-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--neutral-800);
+        }
+        
+        .modal-close {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--neutral-100);
+            color: var(--neutral-600);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -989,42 +1979,19 @@
             transition: var(--transition-base);
         }
         
-        .lightbox-close:hover {
-            background: var(--primary-600);
-            color: white;
-        }
-        
-        /* ===== PWA INSTALL PROMPT ===== */
-        .pwa-install {
-            position: fixed;
-            bottom: var(--space-20);
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            padding: var(--space-4) var(--space-6);
-            border-radius: var(--radius-xl);
-            box-shadow: var(--shadow-xl);
-            display: none;
-            align-items: center;
-            gap: var(--space-3);
-            max-width: 90vw;
-            z-index: var(--z-fixed);
-        }
-        
-        .pwa-install.show {
-            display: flex;
-        }
-        
-        .pwa-install-close {
+        .modal-close:hover {
             background: var(--neutral-200);
-            color: var(--neutral-600);
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
+        }
+        
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
         
         /* ===== RESPONSIVE DESIGN ===== */
@@ -1034,7 +2001,15 @@
             }
             
             .sidebar {
-                margin-top: var(--space-12);
+                margin-top: var(--space-16);
+            }
+            
+            .milestones-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+            
+            .search-container {
+                display: none;
             }
         }
         
@@ -1047,15 +2022,16 @@
                 position: fixed;
                 top: 0;
                 right: -100%;
-                width: 280px;
+                width: 300px;
                 height: 100vh;
                 background: white;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-                padding: var(--space-20) var(--space-6);
-                box-shadow: var(--shadow-xl);
+                padding: var(--space-24) var(--space-8);
+                box-shadow: var(--shadow-2xl);
                 transition: var(--transition-base);
+                z-index: var(--z-modal);
             }
             
             .navbar-menu.active {
@@ -1064,8 +2040,10 @@
             
             .navbar-link {
                 color: var(--neutral-700);
-                padding: var(--space-3) 0;
+                padding: var(--space-4) 0;
                 width: 100%;
+                font-size: 1.125rem;
+                border-bottom: 1px solid var(--neutral-200);
             }
             
             .navbar-toggle {
@@ -1075,6 +2053,7 @@
             .header-cta {
                 flex-direction: column;
                 align-items: center;
+                gap: var(--space-4);
             }
             
             .milestones-grid {
@@ -1087,15 +2066,76 @@
             
             .footer-grid {
                 grid-template-columns: 1fr;
-                gap: var(--space-8);
+                gap: var(--space-10);
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .section {
+                padding: var(--space-16) 0;
+            }
+            
+            .section-header {
+                margin-bottom: var(--space-12);
+            }
+            
+            .lightbox-close {
+                top: var(--space-4);
+                right: var(--space-4);
+            }
+            
+            .lightbox-nav {
+                display: none;
+            }
+            
+            .pwa-install {
+                flex-direction: column;
+                text-align: center;
+                padding: var(--space-6);
+            }
+            
+            .pwa-install-actions {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .milestone-card,
+            .blog-post,
+            .widget {
+                border-radius: var(--radius-2xl);
+            }
+            
+            .header-particles {
+                display: none;
+            }
+            
+            .back-to-top {
+                bottom: var(--space-6);
+                right: var(--space-6);
+                width: 50px;
+                height: 50px;
+            }
+            
+            .notification-container {
+                left: var(--space-4);
+                right: var(--space-4);
+                top: var(--space-4);
+            }
+            
+            .notification {
+                max-width: none;
             }
         }
         
         /* ===== ANIMATIONS ===== */
         .fade-in {
             opacity: 0;
-            transform: translateY(30px);
-            transition: var(--transition-slow);
+            transform: translateY(50px);
+            transition: var(--transition-slower);
         }
         
         .fade-in.visible {
@@ -1105,8 +2145,8 @@
         
         .slide-up {
             opacity: 0;
-            transform: translateY(50px);
-            transition: var(--transition-slow);
+            transform: translateY(80px);
+            transition: var(--transition-slower);
         }
         
         .slide-up.visible {
@@ -1114,31 +2154,92 @@
             transform: translateY(0);
         }
         
-        /* ===== MICRO INTERACTIONS ===== */
+        .slide-left {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: var(--transition-slower);
+        }
+        
+        .slide-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .slide-right {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: var(--transition-slower);
+        }
+        
+        .slide-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: var(--transition-slower);
+        }
+        
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        /* ===== UTILITY ANIMATIONS ===== */
         .interactive-hover {
             transition: var(--transition-base);
         }
         
         .interactive-hover:hover {
-            transform: translateY(-2px);
+            transform: translateY(-4px);
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulseGlow {
+            from {
+                box-shadow: 0 0 20px rgba(238, 90, 107, 0.3);
+            }
+            to {
+                box-shadow: 0 0 30px rgba(238, 90, 107, 0.6);
+            }
+        }
+        
+        .float-animation {
+            animation: floatUpDown 6s ease-in-out infinite;
+        }
+        
+        @keyframes floatUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
         }
         
         /* ===== CUSTOM SCROLLBAR ===== */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 12px;
         }
         
         ::-webkit-scrollbar-track {
             background: var(--neutral-100);
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: var(--primary-400);
             border-radius: var(--radius-full);
         }
         
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: var(--radius-full);
+            border: 2px solid var(--neutral-100);
+        }
+        
         ::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-600);
+            background: var(--gradient-sunset);
         }
         
         /* ===== PERFORMANCE OPTIMIZATIONS ===== */
@@ -1150,6 +2251,35 @@
         .lazy-image.loaded {
             opacity: 1;
         }
+        
+        .preload-image {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            opacity: 0;
+        }
+        
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            .navbar,
+            .back-to-top,
+            .lightbox,
+            .notification-container,
+            .pwa-install {
+                display: none !important;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .milestone-card,
+            .blog-post {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid var(--neutral-300);
+            }
+        }
     </style>
 </head>
 <body>
@@ -1158,15 +2288,26 @@
         <div class="loading-content">
             <div class="loading-spinner"></div>
             <div class="loading-text">Calla & Intan</div>
+            <div class="loading-subtitle">Growing Up Together</div>
         </div>
     </div>
 
+    <!-- Notification Container -->
+    <div class="notification-container" id="notificationContainer"></div>
+
     <!-- PWA Install Prompt -->
     <div class="pwa-install" id="pwaInstall">
-        <i class="fas fa-download"></i>
-        <span>Install app for better experience!</span>
-        <button class="btn btn-primary btn-sm" id="installBtn">Install</button>
-        <button class="pwa-install-close" id="closeInstall">×</button>
+        <div class="pwa-install-icon">
+            <i class="fas fa-download"></i>
+        </div>
+        <div class="pwa-install-content">
+            <div class="pwa-install-title">Install Our App</div>
+            <div class="pwa-install-text">Get the best experience with our mobile app!</div>
+        </div>
+        <div class="pwa-install-actions">
+            <button class="btn btn-primary btn-sm" id="installBtn">Install</button>
+            <button class="pwa-install-close" id="closeInstall">×</button>
+        </div>
     </div>
 
     <!-- Navigation -->
@@ -1176,6 +2317,12 @@
                 <a href="#" class="navbar-logo">
                     Calla & <span>Intan</span>
                 </a>
+                
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search memories..." id="searchInput">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                
                 <ul class="navbar-menu" id="navbarMenu">
                     <li><a href="#home" class="navbar-link active">Home</a></li>
                     <li><a href="#milestones" class="navbar-link">Milestones</a></li>
@@ -1192,20 +2339,31 @@
 
     <!-- Header -->
     <header class="header" id="home">
+        <div class="header-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
         <div class="container">
-            <div class="header-content fade-in">
+            <div class="header-content">
                 <h1 class="header-title">Calla & Intan</h1>
                 <p class="header-subtitle">
-                    A heartfelt journey documenting our growth and memories across generations
+                    A heartfelt interactive journey documenting our growth and precious memories across generations
                 </p>
                 <div class="header-cta">
-                    <a href="#milestones" class="btn btn-primary btn-lg">
+                    <a href="#milestones" class="btn btn-primary btn-xl">
                         <i class="fas fa-heart"></i>
-                        View Milestones
+                        Explore Milestones
                     </a>
-                    <a href="#gallery" class="btn btn-secondary btn-lg">
-                        <i class="fas fa-images"></i>
-                        Photo Gallery
+                    <a href="#gallery" class="btn btn-secondary btn-xl">
+                        <i class="fas fa-camera"></i>
+                        View Gallery
                     </a>
                 </div>
             </div>
@@ -1216,76 +2374,141 @@
     <section class="section" id="milestones">
         <div class="container">
             <div class="section-header fade-in">
-                <h2 class="section-title">Special Milestones</h2>
+                <div class="section-badge">Special Moments</div>
+                <h2 class="section-title">Beautiful Milestones</h2>
                 <p class="section-subtitle">
-                    Capturing the beautiful moments that mark our growth journey across generations
+                    Capturing the most precious and meaningful moments that mark our growth journey across generations
                 </p>
             </div>
             <div class="milestones-grid">
-                <article class="milestone-card interactive-hover slide-up">
+                <article class="milestone-card interactive-hover slide-up" data-milestone="1">
                     <div class="milestone-image">
                         <img src="./images/in8.jpg" alt="Calla's First Genuine Smile" loading="lazy">
                         <span class="milestone-age">3 Months</span>
+                        <button class="milestone-heart" aria-label="Like milestone">
+                            <i class="fas fa-heart"></i>
+                        </button>
                     </div>
                     <div class="milestone-content">
                         <h3 class="milestone-title">Calla's First Genuine Smile</h3>
                         <p class="milestone-text">
-                            That magical moment when Calla gave us her first real smile - not just a reflex, but a genuine connection.
+                            That magical moment when Calla gave us her first real smile - not just a reflex, but a genuine connection that melted our hearts and lit up the entire room.
                         </p>
-                        <div class="milestone-date">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>April 2025</span>
+                        <div class="milestone-footer">
+                            <div class="milestone-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>April 2025</span>
+                            </div>
+                            <div class="milestone-share">
+                                <button class="share-btn" data-share="facebook" aria-label="Share on Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="share-btn" data-share="twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="share-btn" data-share="copy" aria-label="Copy link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </article>
 
-                <article class="milestone-card interactive-hover slide-up">
+                <article class="milestone-card interactive-hover slide-up" data-milestone="2">
                     <div class="milestone-image">
                         <img src="./images/in10.jpg" alt="Intan's First Trophy" loading="lazy">
                         <span class="milestone-age">6 Years</span>
+                        <button class="milestone-heart" aria-label="Like milestone">
+                            <i class="fas fa-heart"></i>
+                        </button>
                     </div>
                     <div class="milestone-content">
                         <h3 class="milestone-title">Intan's First Trophy</h3>
                         <p class="milestone-text">
-                            A proud moment when I received my first achievement award - the joy of accomplishment I hope Calla experiences too.
+                            A proud moment when I received my first achievement award - the joy of accomplishment that I hope Calla will experience many times in her life.
                         </p>
-                        <div class="milestone-date">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>1998</span>
+                        <div class="milestone-footer">
+                            <div class="milestone-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>1998</span>
+                            </div>
+                            <div class="milestone-share">
+                                <button class="share-btn" data-share="facebook" aria-label="Share on Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="share-btn" data-share="twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="share-btn" data-share="copy" aria-label="Copy link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </article>
 
-                <article class="milestone-card interactive-hover slide-up">
+                <article class="milestone-card interactive-hover slide-up" data-milestone="3">
                     <div class="milestone-image">
                         <img src="./images/in4.jpg" alt="Family Cultural Traditions" loading="lazy">
                         <span class="milestone-age">4 Years</span>
+                        <button class="milestone-heart" aria-label="Like milestone">
+                            <i class="fas fa-heart"></i>
+                        </button>
                     </div>
                     <div class="milestone-content">
                         <h3 class="milestone-title">Family Traditions</h3>
                         <p class="milestone-text">
-                            Cultural celebrations that gave me a strong sense of identity and belonging - traditions I'm excited to share with Calla.
+                            Cultural celebrations that gave me a strong sense of identity and belonging - beautiful traditions I'm excited to share with Calla.
                         </p>
-                        <div class="milestone-date">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>1997</span>
+                        <div class="milestone-footer">
+                            <div class="milestone-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>1997</span>
+                            </div>
+                            <div class="milestone-share">
+                                <button class="share-btn" data-share="facebook" aria-label="Share on Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="share-btn" data-share="twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="share-btn" data-share="copy" aria-label="Copy link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </article>
 
-                <article class="milestone-card interactive-hover slide-up">
+                <article class="milestone-card interactive-hover slide-up" data-milestone="4">
                     <div class="milestone-image">
                         <img src="./images/in11.jpg" alt="Calla's First Babbles" loading="lazy">
                         <span class="milestone-age">5 Months</span>
+                        <button class="milestone-heart" aria-label="Like milestone">
+                            <i class="fas fa-heart"></i>
+                        </button>
                     </div>
                     <div class="milestone-content">
                         <h3 class="milestone-title">Calla's First Babbles</h3>
                         <p class="milestone-text">
-                            Those precious moments when Calla started making her first attempt at communication through adorable babbles and giggles.
+                            Those precious moments when Calla started making her first attempts at communication through adorable babbles and giggles.
                         </p>
-                        <div class="milestone-date">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>April 2025</span>
+                        <div class="milestone-footer">
+                            <div class="milestone-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>April 2025</span>
+                            </div>
+                            <div class="milestone-share">
+                                <button class="share-btn" data-share="facebook" aria-label="Share on Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="share-btn" data-share="twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="share-btn" data-share="copy" aria-label="Copy link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -1297,58 +2520,127 @@
     <section class="section gallery-section" id="gallery">
         <div class="container">
             <div class="section-header fade-in">
-                <h2 class="section-title">Our Photo Gallery</h2>
+                <div class="section-badge">Visual Memories</div>
+                <h2 class="section-title">Interactive Photo Gallery</h2>
                 <p class="section-subtitle">
-                    A collection of beautiful memories captured through the lens
+                    A curated collection of beautiful memories captured through the lens of love and family
                 </p>
             </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="calla">Calla</button>
+                <button class="filter-btn" data-filter="intan">Intan</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+                <button class="filter-btn" data-filter="traditions">Traditions</button>
+            </div>
+            
             <div class="gallery-grid">
-                <div class="gallery-item slide-up" data-image="./images/in5.jpg">
-                    <img src="./images/in5.jpg" alt="Family Portrait" loading="lazy">
+                <div class="gallery-item slide-up" data-image="./images/in5.jpg" data-category="family" data-title="Beautiful Family Portrait">
+                    <img src="./images/in5.jpg" alt="Beautiful Family Portrait" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-zoom">
-                            <i class="fas fa-search-plus"></i>
+                        <div class="gallery-actions">
+                            <button class="gallery-btn" data-action="view" aria-label="View image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="gallery-btn" data-action="share" aria-label="Share image">
+                                <i class="fas fa-share"></i>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="gallery-item slide-up" data-image="./images/in6.jpg">
-                    <img src="./images/in6.jpg" alt="Precious Moments" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-zoom">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+                    <div class="gallery-caption">
+                        <h4>Beautiful Family Portrait</h4>
+                        <p>A moment of togetherness captured in time</p>
                     </div>
                 </div>
-                <div class="gallery-item slide-up" data-image="./images/in7.jpg">
-                    <img src="./images/in7.jpg" alt="Childhood Memories" loading="lazy">
+                
+                <div class="gallery-item slide-up" data-image="./images/in6.jpg" data-category="calla" data-title="Precious Baby Moments">
+                    <img src="./images/in6.jpg" alt="Precious Baby Moments" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-zoom">
-                            <i class="fas fa-search-plus"></i>
+                        <div class="gallery-actions">
+                            <button class="gallery-btn" data-action="view" aria-label="View image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="gallery-btn" data-action="share" aria-label="Share image">
+                                <i class="fas fa-share"></i>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="gallery-item slide-up" data-image="./images/in3.jpg">
-                    <img src="./images/in3.jpg" alt="Traditional Outfit" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-zoom">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+                    <div class="gallery-caption">
+                        <h4>Precious Baby Moments</h4>
+                        <p>Calla's early days of wonder and discovery</p>
                     </div>
                 </div>
-                <div class="gallery-item slide-up" data-image="./images/in9.jpg">
-                    <img src="./images/in9.jpg" alt="Sweet Moments" loading="lazy">
+                
+                <div class="gallery-item slide-up" data-image="./images/in7.jpg" data-category="intan" data-title="Childhood Adventures">
+                    <img src="./images/in7.jpg" alt="Childhood Adventures" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-zoom">
-                            <i class="fas fa-search-plus"></i>
+                        <div class="gallery-actions">
+                            <button class="gallery-btn" data-action="view" aria-label="View image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="gallery-btn" data-action="share" aria-label="Share image">
+                                <i class="fas fa-share"></i>
+                            </button>
                         </div>
                     </div>
+                    <div class="gallery-caption">
+                        <h4>Childhood Adventures</h4>
+                        <p>Intan's playful moments from the past</p>
+                    </div>
                 </div>
-                <div class="gallery-item slide-up" data-image="./images/in12.jpg">
+                
+                <div class="gallery-item slide-up" data-image="./images/in3.jpg" data-category="traditions" data-title="Traditional Celebrations">
+                    <img src="./images/in3.jpg" alt="Traditional Celebrations" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-actions">
+                            <button class="gallery-btn" data-action="view" aria-label="View image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="gallery-btn" data-action="share" aria-label="Share image">
+                                <i class="fas fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Traditional Celebrations</h4>
+                        <p>Cultural heritage and beautiful traditions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item slide-up" data-image="./images/in9.jpg" data-category="calla" data-title="Sweet Dreams">
+                    <img src="./images/in9.jpg" alt="Sweet Dreams" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-actions">
+                            <button class="gallery-btn" data-action="view" aria-label="View image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="gallery-btn" data-action="share" aria-label="Share image">
+                                <i class="fas fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Sweet Dreams</h4>
+                        <p>Peaceful moments of rest and comfort</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item slide-up" data-image="./images/in12.jpg" data-category="family" data-title="Growing Together">
                     <img src="./images/in12.jpg" alt="Growing Together" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-zoom">
-                            <i class="fas fa-search-plus"></i>
+                        <div class="gallery-actions">
+                            <button class="gallery-btn" data-action="view" aria-label="View image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="gallery-btn" data-action="share" aria-label="Share image">
+                                <i class="fas fa-share"></i>
+                            </button>
                         </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Growing Together</h4>
+                        <p>Connections that span across generations</p>
                     </div>
                 </div>
             </div>
@@ -1359,9 +2651,10 @@
     <section class="section" id="blog">
         <div class="container">
             <div class="section-header fade-in">
-                <h2 class="section-title">Latest Stories</h2>
+                <div class="section-badge">Family Stories</div>
+                <h2 class="section-title">Latest Stories & Updates</h2>
                 <p class="section-subtitle">
-                    Sharing moments, memories, and milestones from our family journey
+                    Sharing heartfelt moments, memories, and milestones from our beautiful family journey
                 </p>
             </div>
             <div class="blog-grid">
@@ -1369,7 +2662,10 @@
                     <article class="blog-post slide-up">
                         <div class="post-image">
                             <img src="./images/in11.jpg" alt="Welcome to Our World, Calla!" loading="lazy">
-                            <span class="post-category">New</span>
+                            <span class="post-category">Latest</span>
+                            <button class="post-bookmark" aria-label="Bookmark post">
+                                <i class="fas fa-bookmark"></i>
+                            </button>
                         </div>
                         <div class="post-content">
                             <div class="post-meta">
@@ -1381,17 +2677,32 @@
                                     <i class="fas fa-comments"></i>
                                     <span>4 Comments</span>
                                 </div>
+                                <div class="post-meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>234 Views</span>
+                                </div>
                             </div>
                             <h2 class="post-title">Welcome to Our World, Calla!</h2>
                             <p class="post-excerpt">
-                                Today, I want to introduce you to my beautiful niece, Calla. She has brought so much joy to our family with her bright eyes and curious gaze. It's amazing how a small being can bring so much happiness into our lives. As I look at her, I'm reminded of my own childhood photos, and it feels like time is connecting us in a special way.
+                                Today, I want to introduce you to my beautiful niece, Calla. She has brought so much joy to our family with her bright eyes and curious gaze. It's amazing how a small being can bring so much happiness into our lives. As I look at her, I'm reminded of my own childhood photos, and it feels like time is connecting us in a special way. This blog will document our parallel journeys...
                             </p>
                             <div class="post-footer">
                                 <div class="post-author">
                                     <img src="./images/in14.jpg" alt="Intan" class="author-avatar">
-                                    <span class="author-name">Intan</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Intan</span>
+                                        <span class="author-role">Aunt & Storyteller</span>
+                                    </div>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                <div class="post-actions">
+                                    <button class="post-action" data-action="like" aria-label="Like post">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="post-action" data-action="share" aria-label="Share post">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -1400,6 +2711,9 @@
                         <div class="post-image">
                             <img src="./images/in12.jpg" alt="First Smiles and Precious Treasures" loading="lazy">
                             <span class="post-category">Milestones</span>
+                            <button class="post-bookmark" aria-label="Bookmark post">
+                                <i class="fas fa-bookmark"></i>
+                            </button>
                         </div>
                         <div class="post-content">
                             <div class="post-meta">
@@ -1411,17 +2725,32 @@
                                     <i class="fas fa-comments"></i>
                                     <span>7 Comments</span>
                                 </div>
+                                <div class="post-meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>189 Views</span>
+                                </div>
                             </div>
                             <h2 class="post-title">First Smiles and Precious Treasures</h2>
                             <p class="post-excerpt">
-                                There's something so special about a baby's first genuine smile. Calla has started smiling more frequently now, and it melts my heart every time. It reminds me of my own childhood photos where I'm clutching my favorite stuffed bunny that I absolutely adored.
+                                There's something so special about a baby's first genuine smile. Calla has started smiling more frequently now, and it melts my heart every time. It reminds me of my own childhood photos where I'm clutching my favorite stuffed bunny that I absolutely adored. These connections across time are what make family so magical...
                             </p>
                             <div class="post-footer">
                                 <div class="post-author">
                                     <img src="./images/in14.jpg" alt="Intan" class="author-avatar">
-                                    <span class="author-name">Intan</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Intan</span>
+                                        <span class="author-role">Aunt & Storyteller</span>
+                                    </div>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                <div class="post-actions">
+                                    <button class="post-action" data-action="like" aria-label="Like post">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="post-action" data-action="share" aria-label="Share post">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -1432,6 +2761,11 @@
                                 <source src="./videos/in13.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+                            <div class="video-overlay">
+                                <div class="video-play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="post-content">
                             <div class="post-meta">
@@ -1443,56 +2777,91 @@
                                     <i class="fas fa-comments"></i>
                                     <span>12 Comments</span>
                                 </div>
+                                <div class="post-meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>456 Views</span>
+                                </div>
                             </div>
                             <h2 class="post-title">Calla's First Babbles and Giggles</h2>
                             <p class="post-excerpt">
-                                Today I managed to capture the most precious moment - Calla's adorable babbles and giggles! Every little sound she makes feels like she's trying to tell us a story. The way her eyes light up when she gets a reaction from us is simply magical.
+                                Today I managed to capture the most precious moment - Calla's adorable babbles and giggles! Every little sound she makes feels like she's trying to tell us a story. The way her eyes light up when she gets a reaction from us is simply magical. These moments remind me why family bonds are so special...
                             </p>
                             <div class="post-footer">
                                 <div class="post-author">
                                     <img src="./images/in14.jpg" alt="Intan" class="author-avatar">
-                                    <span class="author-name">Intan</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Intan</span>
+                                        <span class="author-role">Aunt & Storyteller</span>
+                                    </div>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                <div class="post-actions">
+                                    <button class="post-action" data-action="like" aria-label="Like post">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="post-action" data-action="share" aria-label="Share post">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </article>
                 </div>
 
                 <aside class="sidebar">
-                    <div class="widget about-widget" id="about">
-                        <h3 class="widget-title">About Us</h3>
+                    <div class="widget about-widget slide-left" id="about">
+                        <h3 class="widget-title">About Our Journey</h3>
                         <img src="./images/in5.jpg" alt="Intan and Family" class="profile-image">
                         <p class="about-text">
-                            Welcome to our family blog! I'm Intan, documenting the growth journey of my beautiful niece Calla alongside reflections on my own childhood. This blog is a space where past meets present, creating a tapestry of memories across generations.
+                            Welcome to our interactive family blog! I'm Intan, documenting the growth journey of my beautiful niece Calla alongside reflections on my own childhood. This is a space where past meets present, creating a beautiful tapestry of memories across generations.
                         </p>
-                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
                         <div class="social-links">
-                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="widget">
-                        <h3 class="widget-title">Categories</h3>
+                    <div class="widget slide-left">
+                        <h3 class="widget-title">Popular Categories</h3>
                         <ul class="footer-links">
-                            <li><a href="#">Milestones (12)</a></li>
-                            <li><a href="#">Family Traditions (8)</a></li>
-                            <li><a href="#">Growth & Development (15)</a></li>
-                            <li><a href="#">Special Moments (24)</a></li>
-                            <li><a href="#">Parenting Insights (10)</a></li>
+                            <li><a href="#"><i class="fas fa-star"></i> Milestones (12)</a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i> Family Traditions (8)</a></li>
+                            <li><a href="#"><i class="fas fa-seedling"></i> Growth & Development (15)</a></li>
+                            <li><a href="#"><i class="fas fa-camera"></i> Special Moments (24)</a></li>
+                            <li><a href="#"><i class="fas fa-lightbulb"></i> Parenting Insights (10)</a></li>
                         </ul>
                     </div>
 
-                    <div class="widget">
-                        <h3 class="widget-title">Recent Posts</h3>
+                    <div class="widget slide-left">
+                        <h3 class="widget-title">Recent Memories</h3>
                         <ul class="footer-links">
-                            <li><a href="#">Calla's First Smile</a></li>
-                            <li><a href="#">Passing Down Traditions</a></li>
-                            <li><a href="#">The Importance of Family</a></li>
+                            <li><a href="#"><i class="fas fa-smile"></i> Calla's First Smile</a></li>
+                            <li><a href="#"><i class="fas fa-gift"></i> Passing Down Traditions</a></li>
+                            <li><a href="#"><i class="fas fa-users"></i> The Importance of Family</a></li>
+                            <li><a href="#"><i class="fas fa-baby"></i> Growing Up Fast</a></li>
                         </ul>
+                    </div>
+
+                    <div class="widget slide-left">
+                        <h3 class="widget-title">Stay Connected</h3>
+                        <p class="about-text">
+                            Subscribe to receive updates on new posts and milestone celebrations!
+                        </p>
+                        <form class="newsletter-form" id="sidebarNewsletter">
+                            <input type="email" placeholder="Your Email" required aria-label="Email for newsletter" class="newsletter-input">
+                            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                        </form>
                     </div>
                 </aside>
             </div>
@@ -1501,55 +2870,80 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-widget">
-                    <h3>About Our Blog</h3>
-                    <p class="footer-text">
-                        A heartfelt diary chronicling the beautiful journey of Calla's growth alongside reflections on Intan's childhood memories. Connecting generations through shared experiences and love.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-widget fade-in">
+                        <h3>About Our Blog</h3>
+                        <p class="footer-text">
+                            A heartfelt interactive diary chronicling the beautiful journey of Calla's growth alongside reflections on Intan's childhood memories. Connecting generations through shared experiences, love, and precious moments.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-widget fade-in">
+                        <h3>Quick Navigation</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="#milestones"><i class="fas fa-star"></i> Milestones</a></li>
+                            <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                            <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget fade-in">
+                        <h3>Get In Touch</h3>
+                        <ul class="footer-links">
+                            <li><a href="mailto:intancalla@email.com"><i class="fas fa-envelope"></i> intancalla@email.com</a></li>
+                            <li><a href="tel:+15551234567"><i class="fas fa-phone"></i> +1 (555) 123-4567</a></li>
+                            <li><a href="#"><i class="fas fa-globe"></i> www.callaintan.com</a></li>
+                            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Family Blog Online</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget fade-in">
+                        <h3>Newsletter</h3>
+                        <p class="footer-text">
+                            Subscribe to receive updates on new posts, milestone celebrations, and special family moments.
+                        </p>
+                        <form class="newsletter-form" id="footerNewsletter">
+                            <input type="email" placeholder="Your Email Address" required aria-label="Email for newsletter" class="newsletter-input">
+                            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                        </form>
                     </div>
                 </div>
 
-                <div class="footer-widget">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#milestones">Milestones</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Calla & Intan - Growing Up Together. All rights reserved.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="footer-widget">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li><a href="mailto:intancalla@email.com">intancalla@email.com</a></li>
-                        <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
-                        <li><a href="#">www.callaintan.com</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-widget">
-                    <h3>Newsletter</h3>
-                    <p class="footer-text">
-                        Subscribe to receive updates on new posts and milestone celebrations.
-                    </p>
-                    <form class="newsletter-form" id="newsletterForm">
-                        <input type="email" placeholder="Your Email" required aria-label="Email for newsletter">
-                        <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Calla & Intan - Growing Up Together. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1566,16 +2960,54 @@
             <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
                 <i class="fas fa-times"></i>
             </button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 6</div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Get In Touch</h3>
+                <button class="modal-close" id="closeContactModal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="contactForm">
+                <div style="margin-bottom: var(--space-4);">
+                    <label for="contactName" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Name</label>
+                    <input type="text" id="contactName" required style="width: 100%; padding: var(--space-3); border: 1px solid var(--neutral-300); border-radius: var(--radius-lg);">
+                </div>
+                <div style="margin-bottom: var(--space-4);">
+                    <label for="contactEmail" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Email</label>
+                    <input type="email" id="contactEmail" required style="width: 100%; padding: var(--space-3); border: 1px solid var(--neutral-300); border-radius: var(--radius-lg);">
+                </div>
+                <div style="margin-bottom: var(--space-6);">
+                    <label for="contactMessage" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Message</label>
+                    <textarea id="contactMessage" required rows="4" style="width: 100%; padding: var(--space-3); border: 1px solid var(--neutral-300); border-radius: var(--radius-lg); resize: vertical;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
     </div>
 
     <script>
-        // Advanced JavaScript with PWA and Performance optimizations
+        // Ultimate Interactive JavaScript Class
         class CallaIntanBlogUltimate {
             constructor() {
                 this.deferredPrompt = null;
                 this.galleryImages = [];
                 this.currentImageIndex = 0;
+                this.observers = new Map();
+                this.isScrolling = false;
+                this.scrollTimeout = null;
+                
                 this.init();
             }
 
@@ -1585,31 +3017,36 @@
                 this.initializeGallery();
                 this.initializePWA();
                 this.initializeLazyLoading();
+                this.initializeSearch();
+                this.initializeInteractiveFeatures();
                 this.hideLoadingScreen();
                 this.setupPerformanceOptimizations();
             }
 
             setupEventListeners() {
-                // Passive scroll listeners for better performance
+                // Optimized scroll handling
                 window.addEventListener('scroll', this.throttle(() => {
                     this.handleNavbarScroll();
                     this.handleBackToTop();
-                }, 10), { passive: true });
+                    this.updateActiveNavLink();
+                }, 16), { passive: true });
 
                 // Mobile menu toggle
                 const navbarToggle = document.getElementById('navbarToggle');
                 const navbarMenu = document.getElementById('navbarMenu');
                 
                 navbarToggle?.addEventListener('click', () => {
-                    navbarMenu.classList.toggle('active');
-                    document.body.style.overflow = navbarMenu.classList.contains('active') ? 'hidden' : '';
+                    const isActive = navbarMenu.classList.toggle('active');
+                    document.body.style.overflow = isActive ? 'hidden' : '';
+                    navbarToggle.setAttribute('aria-expanded', isActive);
                     
-                    // Update aria-expanded
-                    const expanded = navbarMenu.classList.contains('active');
-                    navbarToggle.setAttribute('aria-expanded', expanded);
+                    // Add menu animation
+                    if (isActive) {
+                        navbarMenu.style.animation = 'slideInRight 0.3s ease-out';
+                    }
                 });
 
-                // Smooth scrolling with proper offset
+                // Smooth scrolling with enhanced animation
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     anchor.addEventListener('click', (e) => {
                         e.preventDefault();
@@ -1618,39 +3055,95 @@
                         
                         if (targetElement) {
                             const offsetTop = targetElement.offsetTop - 80;
-                            window.scrollTo({
-                                top: offsetTop,
-                                behavior: 'smooth'
-                            });
-
+                            this.smoothScrollTo(offsetTop);
+                            
                             // Close mobile menu if open
                             navbarMenu?.classList.remove('active');
                             document.body.style.overflow = '';
+                            navbarToggle?.setAttribute('aria-expanded', 'false');
                         }
                     });
                 });
 
-                // Back to top
+                // Back to top with animation
                 document.getElementById('backToTop')?.addEventListener('click', () => {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    this.smoothScrollTo(0);
                 });
 
                 // Newsletter forms
                 document.querySelectorAll('form').forEach(form => {
                     form.addEventListener('submit', (e) => {
                         e.preventDefault();
-                        this.handleNewsletterSubmit(form);
+                        this.handleFormSubmit(form);
                     });
                 });
 
-                // Keyboard navigation
+                // Enhanced keyboard navigation
                 document.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape') {
-                        this.closeLightbox();
-                        navbarMenu?.classList.remove('active');
-                        document.body.style.overflow = '';
-                    }
+                    this.handleKeyboardNavigation(e);
                 });
+
+                // Window resize optimization
+                window.addEventListener('resize', this.debounce(() => {
+                    this.handleResize();
+                }, 250));
+
+                // Share buttons
+                document.querySelectorAll('[data-share]').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.handleShare(btn.dataset.share, btn);
+                    });
+                });
+
+                // Interactive milestone cards
+                document.querySelectorAll('.milestone-heart').forEach(heart => {
+                    heart.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.toggleLike(heart);
+                    });
+                });
+
+                // Post actions
+                document.querySelectorAll('.post-action').forEach(action => {
+                    action.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.handlePostAction(action);
+                    });
+                });
+
+                // Gallery filters
+                document.querySelectorAll('.filter-btn').forEach(filter => {
+                    filter.addEventListener('click', () => {
+                        this.filterGallery(filter.dataset.filter, filter);
+                    });
+                });
+            }
+
+            // Enhanced smooth scrolling
+            smoothScrollTo(targetY) {
+                const startY = window.pageYOffset;
+                const distance = targetY - startY;
+                const duration = Math.min(Math.abs(distance) / 2, 1000);
+                let startTime = null;
+
+                const easeInOutCubic = (t) => {
+                    return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+                };
+
+                const animation = (currentTime) => {
+                    if (startTime === null) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const progress = Math.min(timeElapsed / duration, 1);
+                    
+                    window.scrollTo(0, startY + distance * easeInOutCubic(progress));
+                    
+                    if (progress < 1) {
+                        requestAnimationFrame(animation);
+                    }
+                };
+
+                requestAnimationFrame(animation);
             }
 
             // Throttle function for performance
@@ -1667,6 +3160,19 @@
                 }
             }
 
+            // Debounce function
+            debounce(func, wait) {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            }
+
             handleNavbarScroll() {
                 const navbar = document.getElementById('navbar');
                 const scrolled = window.scrollY > 50;
@@ -1679,26 +3185,54 @@
                 backToTop?.classList.toggle('visible', visible);
             }
 
+            updateActiveNavLink() {
+                const sections = document.querySelectorAll('section[id], header[id]');
+                const navLinks = document.querySelectorAll('.navbar-link');
+                
+                let currentSection = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    const href = link.getAttribute('href');
+                    if (href === '#' + currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
             initializeAnimations() {
-                // Intersection Observer for scroll animations
+                // Enhanced Intersection Observer with stagger animations
                 const observerOptions = {
                     threshold: 0.1,
                     rootMargin: '0px 0px -50px 0px'
                 };
 
                 const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
+                    entries.forEach((entry, index) => {
                         if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            // Stop observing once visible for performance
+                            // Add stagger delay for grouped elements
+                            setTimeout(() => {
+                                entry.target.classList.add('visible');
+                            }, index * 100);
                             observer.unobserve(entry.target);
                         }
                     });
                 }, observerOptions);
 
-                document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+                // Observe all animated elements
+                document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right, .scale-in').forEach(el => {
                     observer.observe(el);
                 });
+
+                this.observers.set('main', observer);
             }
 
             initializeGallery() {
@@ -1706,51 +3240,68 @@
                 const lightbox = document.getElementById('lightbox');
                 const lightboxImage = document.getElementById('lightboxImage');
                 const lightboxClose = document.getElementById('lightboxClose');
+                const lightboxPrev = document.getElementById('lightboxPrev');
+                const lightboxNext = document.getElementById('lightboxNext');
+                const lightboxCounter = document.getElementById('lightboxCounter');
 
                 // Collect all gallery images
                 galleryItems.forEach((item, index) => {
                     const imageSrc = item.getAttribute('data-image');
-                    this.galleryImages.push(imageSrc);
+                    const title = item.getAttribute('data-title') || `Image ${index + 1}`;
+                    this.galleryImages.push({ src: imageSrc, title });
 
+                    // Gallery item click handlers
+                    const viewBtn = item.querySelector('[data-action="view"]');
+                    viewBtn?.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        this.currentImageIndex = index;
+                        this.openLightbox();
+                    });
+
+                    const shareBtn = item.querySelector('[data-action="share"]');
+                    shareBtn?.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        this.shareImage(imageSrc, title);
+                    });
+
+                    // Also allow clicking on the item itself
                     item.addEventListener('click', () => {
                         this.currentImageIndex = index;
-                        this.openLightbox(imageSrc);
+                        this.openLightbox();
                     });
                 });
 
-                lightboxClose?.addEventListener('click', () => {
-                    this.closeLightbox();
-                });
+                // Lightbox controls
+                lightboxClose?.addEventListener('click', () => this.closeLightbox());
+                lightboxPrev?.addEventListener('click', () => this.previousImage());
+                lightboxNext?.addEventListener('click', () => this.nextImage());
 
+                // Close on backdrop click
                 lightbox?.addEventListener('click', (e) => {
                     if (e.target === lightbox) {
                         this.closeLightbox();
                     }
                 });
-
-                // Keyboard navigation for lightbox
-                document.addEventListener('keydown', (e) => {
-                    if (lightbox?.classList.contains('active')) {
-                        if (e.key === 'ArrowLeft') {
-                            this.previousImage();
-                        } else if (e.key === 'ArrowRight') {
-                            this.nextImage();
-                        }
-                    }
-                });
             }
 
-            openLightbox(imageSrc) {
+            openLightbox() {
                 const lightbox = document.getElementById('lightbox');
                 const lightboxImage = document.getElementById('lightboxImage');
+                const lightboxCounter = document.getElementById('lightboxCounter');
                 
-                lightboxImage.src = imageSrc;
-                lightboxImage.alt = 'Gallery image';
+                const currentImage = this.galleryImages[this.currentImageIndex];
+                lightboxImage.src = currentImage.src;
+                lightboxImage.alt = currentImage.title;
+                lightboxCounter.textContent = `${this.currentImageIndex + 1} / ${this.galleryImages.length}`;
+                
                 lightbox.classList.add('active');
                 document.body.style.overflow = 'hidden';
                 
                 // Focus management for accessibility
                 lightbox.focus();
+                
+                // Preload adjacent images for better performance
+                this.preloadAdjacentImages();
             }
 
             closeLightbox() {
@@ -1761,18 +3312,262 @@
 
             nextImage() {
                 this.currentImageIndex = (this.currentImageIndex + 1) % this.galleryImages.length;
-                this.openLightbox(this.galleryImages[this.currentImageIndex]);
+                this.updateLightboxImage();
             }
 
             previousImage() {
                 this.currentImageIndex = (this.currentImageIndex - 1 + this.galleryImages.length) % this.galleryImages.length;
-                this.openLightbox(this.galleryImages[this.currentImageIndex]);
+                this.updateLightboxImage();
+            }
+
+            updateLightboxImage() {
+                const lightboxImage = document.getElementById('lightboxImage');
+                const lightboxCounter = document.getElementById('lightboxCounter');
+                
+                const currentImage = this.galleryImages[this.currentImageIndex];
+                lightboxImage.src = currentImage.src;
+                lightboxImage.alt = currentImage.title;
+                lightboxCounter.textContent = `${this.currentImageIndex + 1} / ${this.galleryImages.length}`;
+                
+                this.preloadAdjacentImages();
+            }
+
+            preloadAdjacentImages() {
+                const nextIndex = (this.currentImageIndex + 1) % this.galleryImages.length;
+                const prevIndex = (this.currentImageIndex - 1 + this.galleryImages.length) % this.galleryImages.length;
+                
+                [nextIndex, prevIndex].forEach(index => {
+                    const img = new Image();
+                    img.src = this.galleryImages[index].src;
+                });
+            }
+
+            filterGallery(filter, filterBtn) {
+                // Update active filter button
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                filterBtn.classList.add('active');
+
+                // Filter gallery items with animation
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                
+                galleryItems.forEach((item, index) => {
+                    const category = item.getAttribute('data-category');
+                    const shouldShow = filter === 'all' || category === filter;
+                    
+                    if (shouldShow) {
+                        setTimeout(() => {
+                            item.style.display = 'block';
+                            item.style.animation = 'fadeInScale 0.5s ease-out forwards';
+                        }, index * 50);
+                    } else {
+                        item.style.animation = 'fadeOutScale 0.3s ease-out forwards';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            }
+
+            initializeSearch() {
+                const searchInput = document.getElementById('searchInput');
+                if (!searchInput) return;
+
+                searchInput.addEventListener('input', this.debounce((e) => {
+                    const query = e.target.value.toLowerCase().trim();
+                    this.performSearch(query);
+                }, 300));
+            }
+
+            performSearch(query) {
+                // Search through blog posts, milestones, and gallery items
+                const searchableElements = document.querySelectorAll('.blog-post, .milestone-card, .gallery-item');
+                
+                if (!query) {
+                    searchableElements.forEach(el => {
+                        el.style.display = '';
+                        el.classList.remove('search-hidden');
+                    });
+                    return;
+                }
+
+                let resultsCount = 0;
+                searchableElements.forEach(element => {
+                    const text = element.textContent.toLowerCase();
+                    const title = element.querySelector('.post-title, .milestone-title')?.textContent.toLowerCase() || '';
+                    const alt = element.querySelector('img')?.alt.toLowerCase() || '';
+                    
+                    const matches = text.includes(query) || title.includes(query) || alt.includes(query);
+                    
+                    if (matches) {
+                        element.style.display = '';
+                        element.classList.remove('search-hidden');
+                        resultsCount++;
+                    } else {
+                        element.style.display = 'none';
+                        element.classList.add('search-hidden');
+                    }
+                });
+
+                // Show search results feedback
+                this.showNotification(`Found ${resultsCount} results for "${query}"`, 'info');
+            }
+
+            handleKeyboardNavigation(e) {
+                const lightbox = document.getElementById('lightbox');
+                
+                if (lightbox?.classList.contains('active')) {
+                    switch(e.key) {
+                        case 'Escape':
+                            this.closeLightbox();
+                            break;
+                        case 'ArrowLeft':
+                            this.previousImage();
+                            break;
+                        case 'ArrowRight':
+                            this.nextImage();
+                            break;
+                    }
+                }
+
+                if (e.key === 'Escape') {
+                    // Close any open modals
+                    document.querySelectorAll('.modal.active').forEach(modal => {
+                        modal.classList.remove('active');
+                    });
+                    
+                    // Close mobile menu
+                    const navbarMenu = document.getElementById('navbarMenu');
+                    if (navbarMenu?.classList.contains('active')) {
+                        navbarMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                }
+            }
+
+            toggleLike(heartButton) {
+                const isLiked = heartButton.classList.contains('liked');
+                
+                if (isLiked) {
+                    heartButton.classList.remove('liked');
+                    heartButton.style.color = '';
+                    heartButton.style.animation = 'heartShrink 0.3s ease-out';
+                } else {
+                    heartButton.classList.add('liked');
+                    heartButton.style.color = '#ff6b6b';
+                    heartButton.style.animation = 'heartBeat 0.6s ease-out';
+                }
+
+                // Add some visual feedback
+                const ripple = document.createElement('div');
+                ripple.style.cssText = `
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 20px;
+                    height: 20px;
+                    background: #ff6b6b;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%) scale(0);
+                    animation: rippleEffect 0.6s ease-out forwards;
+                    pointer-events: none;
+                `;
+                
+                heartButton.style.position = 'relative';
+                heartButton.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            }
+
+            handlePostAction(actionButton) {
+                const action = actionButton.dataset.action;
+                
+                switch(action) {
+                    case 'like':
+                        this.toggleLike(actionButton);
+                        break;
+                    case 'share':
+                        this.sharePost(actionButton);
+                        break;
+                    case 'bookmark':
+                        this.toggleBookmark(actionButton);
+                        break;
+                }
+            }
+
+            sharePost(button) {
+                const postTitle = button.closest('.blog-post').querySelector('.post-title').textContent;
+                const url = window.location.href;
+                
+                if (navigator.share) {
+                    navigator.share({
+                        title: postTitle,
+                        text: 'Check out this beautiful family story!',
+                        url: url
+                    });
+                } else {
+                    this.copyToClipboard(url);
+                    this.showNotification('Post link copied to clipboard!', 'success');
+                }
+            }
+
+            shareImage(imageSrc, title) {
+                const url = window.location.origin + '/' + imageSrc;
+                
+                if (navigator.share) {
+                    navigator.share({
+                        title: title,
+                        text: 'Beautiful family memory',
+                        url: url
+                    });
+                } else {
+                    this.copyToClipboard(url);
+                    this.showNotification('Image link copied to clipboard!', 'success');
+                }
+            }
+
+            handleShare(platform, button) {
+                const url = encodeURIComponent(window.location.href);
+                const title = encodeURIComponent('Calla & Intan - Growing Up Together');
+                
+                let shareUrl;
+                switch(platform) {
+                    case 'facebook':
+                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                        break;
+                    case 'twitter':
+                        shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                        break;
+                    case 'copy':
+                        this.copyToClipboard(window.location.href);
+                        this.showNotification('Link copied to clipboard!', 'success');
+                        return;
+                }
+                
+                if (shareUrl) {
+                    window.open(shareUrl, '_blank', 'width=600,height=400');
+                }
+            }
+
+            copyToClipboard(text) {
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText(text);
+                } else {
+                    // Fallback for older browsers
+                    const textArea = document.createElement('textarea');
+                    textArea.value = text;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                }
             }
 
             initializePWA() {
                 // Register service worker
                 if ('serviceWorker' in navigator) {
-                    navigator.serviceWorker.register('/sw.js').then((registration) => {
+                    navigator.serviceWorker.register('./sw.js').then((registration) => {
                         console.log('SW registered: ', registration);
                     }).catch((registrationError) => {
                         console.log('SW registration failed: ', registrationError);
@@ -1795,7 +3590,7 @@
                         this.deferredPrompt.prompt();
                         this.deferredPrompt.userChoice.then((choiceResult) => {
                             if (choiceResult.outcome === 'accepted') {
-                                console.log('User accepted the install prompt');
+                                this.showNotification('App installed successfully!', 'success');
                             }
                             this.deferredPrompt = null;
                             pwaInstall?.classList.remove('show');
@@ -1812,17 +3607,18 @@
                 const pwaInstall = document.getElementById('pwaInstall');
                 setTimeout(() => {
                     pwaInstall?.classList.add('show');
-                }, 3000);
+                }, 5000);
             }
 
             initializeLazyLoading() {
-                // Lazy loading for images
                 if ('IntersectionObserver' in window) {
                     const imageObserver = new IntersectionObserver((entries, observer) => {
                         entries.forEach(entry => {
                             if (entry.isIntersecting) {
                                 const img = entry.target;
-                                img.src = img.dataset.src || img.src;
+                                if (img.dataset.src) {
+                                    img.src = img.dataset.src;
+                                }
                                 img.classList.add('loaded');
                                 observer.unobserve(img);
                             }
@@ -1833,12 +3629,83 @@
                         img.classList.add('lazy-image');
                         imageObserver.observe(img);
                     });
+
+                    this.observers.set('images', imageObserver);
                 }
             }
 
+            initializeInteractiveFeatures() {
+                // Add custom animations to CSS
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes heartBeat {
+                        0% { transform: scale(1); }
+                        25% { transform: scale(1.3); }
+                        50% { transform: scale(1.1); }
+                        75% { transform: scale(1.25); }
+                        100% { transform: scale(1); }
+                    }
+                    
+                    @keyframes heartShrink {
+                        from { transform: scale(1.1); }
+                        to { transform: scale(1); }
+                    }
+                    
+                    @keyframes rippleEffect {
+                        to {
+                            transform: translate(-50%, -50%) scale(4);
+                            opacity: 0;
+                        }
+                    }
+                    
+                    @keyframes fadeInScale {
+                        from {
+                            opacity: 0;
+                            transform: scale(0.8);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                    
+                    @keyframes fadeOutScale {
+                        from {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                        to {
+                            opacity: 0;
+                            transform: scale(0.8);
+                        }
+                    }
+                    
+                    @keyframes slideInRight {
+                        from {
+                            transform: translateX(100%);
+                        }
+                        to {
+                            transform: translateX(0);
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+
+                // Add hover effects to interactive elements
+                document.querySelectorAll('.milestone-card, .blog-post, .gallery-item').forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        card.style.transform = 'translateY(-8px) scale(1.02)';
+                    });
+                    
+                    card.addEventListener('mouseleave', () => {
+                        card.style.transform = '';
+                    });
+                });
+            }
+
             setupPerformanceOptimizations() {
-                // Preload critical resources
-                const criticalImages = ['./images/in5.jpg', './images/in8.jpg'];
+                // Preload critical images
+                const criticalImages = ['./images/in5.jpg', './images/in8.jpg', './images/in11.jpg'];
                 criticalImages.forEach(src => {
                     const link = document.createElement('link');
                     link.rel = 'preload';
@@ -1851,24 +3718,45 @@
                 const videos = document.querySelectorAll('video');
                 videos.forEach(video => {
                     video.addEventListener('loadstart', () => {
-                        video.style.opacity = '0.5';
+                        video.style.opacity = '0.7';
                     });
                     video.addEventListener('canplay', () => {
                         video.style.opacity = '1';
                     });
                 });
+
+                // Add performance monitoring
+                if ('performance' in window) {
+                    window.addEventListener('load', () => {
+                        setTimeout(() => {
+                            const perfData = performance.getEntriesByType('navigation')[0];
+                            console.log('Page Load Time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+                        }, 0);
+                    });
+                }
             }
 
-            handleNewsletterSubmit(form) {
-                const emailInput = form.querySelector('input[type="email"]');
-                const email = emailInput?.value;
+            handleFormSubmit(form) {
+                const formData = new FormData(form);
+                const email = formData.get('email') || form.querySelector('input[type="email"]')?.value;
 
                 if (email && this.validateEmail(email)) {
-                    this.showNotification(`Thank you for subscribing with ${email}!`, 'success');
-                    emailInput.value = '';
+                    // Simulate form submission
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
                     
-                    // Analytics tracking (if implemented)
-                    this.trackEvent('newsletter', 'subscribe', email);
+                    submitBtn.textContent = 'Subscribing...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        this.showNotification(`Thank you for subscribing with ${email}!`, 'success');
+                        form.reset();
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Analytics tracking
+                        this.trackEvent('newsletter', 'subscribe', email);
+                    }, 1500);
                 } else {
                     this.showNotification('Please enter a valid email address', 'error');
                 }
@@ -1880,39 +3768,51 @@
             }
 
             showNotification(message, type = 'info') {
-                const notification = document.createElement('div');
-                notification.style.cssText = `
-                    position: fixed;
-                    top: 20px;
-                    right: 20px;
-                    background: ${type === 'success' ? 'var(--primary-600)' : type === 'error' ? '#ef4444' : 'var(--neutral-700)'};
-                    color: white;
-                    padding: 1rem 1.5rem;
-                    border-radius: var(--radius-lg);
-                    box-shadow: var(--shadow-lg);
-                    z-index: var(--z-tooltip);
-                    transform: translateX(100%);
-                    transition: var(--transition-base);
-                    max-width: 300px;
-                `;
-                notification.textContent = message;
-                notification.setAttribute('role', 'alert');
-                document.body.appendChild(notification);
+                const container = document.getElementById('notificationContainer');
+                if (!container) return;
 
-                // Animate in
-                requestAnimationFrame(() => {
-                    notification.style.transform = 'translateX(0)';
+                const notification = document.createElement('div');
+                notification.className = `notification ${type}`;
+                notification.innerHTML = `
+                    <div class="notification-header">
+                        <span class="notification-title">${this.getNotificationTitle(type)}</span>
+                        <button class="notification-close" aria-label="Close notification">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="notification-message">${message}</div>
+                `;
+
+                // Add close functionality
+                notification.querySelector('.notification-close').addEventListener('click', () => {
+                    this.removeNotification(notification);
                 });
 
-                // Remove after delay
+                container.appendChild(notification);
+
+                // Auto remove after delay
                 setTimeout(() => {
-                    notification.style.transform = 'translateX(100%)';
-                    setTimeout(() => {
-                        if (document.body.contains(notification)) {
-                            document.body.removeChild(notification);
-                        }
-                    }, 300);
-                }, 3000);
+                    this.removeNotification(notification);
+                }, 5000);
+            }
+
+            removeNotification(notification) {
+                notification.style.transform = 'translateX(400px)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }
+
+            getNotificationTitle(type) {
+                const titles = {
+                    success: 'Success!',
+                    error: 'Error',
+                    warning: 'Warning',
+                    info: 'Info'
+                };
+                return titles[type] || 'Notification';
             }
 
             trackEvent(category, action, label) {
@@ -1923,29 +3823,90 @@
                         event_label: label
                     });
                 }
+                
+                console.log(`Analytics: ${category} - ${action} - ${label}`);
+            }
+
+            handleResize() {
+                // Recalculate layouts on resize
+                this.observers.forEach(observer => {
+                    // Re-observe elements if needed
+                });
             }
 
             hideLoadingScreen() {
                 setTimeout(() => {
                     const loadingScreen = document.getElementById('loadingScreen');
                     loadingScreen?.classList.add('hidden');
-                }, 1000);
+                    
+                    // Start entrance animations
+                    setTimeout(() => {
+                        document.body.classList.add('loaded');
+                    }, 500);
+                }, 2000);
+            }
+
+            // Public API methods
+            refreshGallery() {
+                this.initializeGallery();
+            }
+
+            addNotification(message, type) {
+                this.showNotification(message, type);
+            }
+
+            getCurrentImageIndex() {
+                return this.currentImageIndex;
             }
         }
 
-        // Initialize when DOM is ready
+        // Initialize the ultimate blog when DOM is ready
         document.addEventListener('DOMContentLoaded', () => {
-            new CallaIntanBlogUltimate();
+            window.callaIntanBlog = new CallaIntanBlogUltimate();
+            
+            // Expose some methods globally for debugging
+            window.showNotification = (msg, type) => window.callaIntanBlog.addNotification(msg, type);
+            window.refreshGallery = () => window.callaIntanBlog.refreshGallery();
         });
 
-        // Performance monitoring
+        // Performance monitoring and error handling
         window.addEventListener('load', () => {
-            // Log performance metrics
-            if ('performance' in window) {
-                const perfData = performance.getEntriesByType('navigation')[0];
-                console.log('Page Load Time:', perfData.loadEventEnd - perfData.loadEventStart);
+            console.log('✨ Calla & Intan Ultimate Blog Loaded Successfully!');
+        });
+
+        window.addEventListener('error', (e) => {
+            console.error('Blog Error:', e.error);
+        });
+
+        // Add some easter eggs for fun
+        const konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+        let konamiIndex = 0;
+
+        document.addEventListener('keydown', (e) => {
+            if (e.keyCode === konamiCode[konamiIndex]) {
+                konamiIndex++;
+                if (konamiIndex === konamiCode.length) {
+                    document.body.style.animation = 'rainbow 2s infinite';
+                    window.callaIntanBlog?.addNotification('🎉 Easter egg activated! Rainbow mode!', 'success');
+                    konamiIndex = 0;
+                    setTimeout(() => {
+                        document.body.style.animation = '';
+                    }, 10000);
+                }
+            } else {
+                konamiIndex = 0;
             }
         });
+
+        // Add rainbow animation for easter egg
+        const rainbowStyle = document.createElement('style');
+        rainbowStyle.textContent = `
+            @keyframes rainbow {
+                0% { filter: hue-rotate(0deg); }
+                100% { filter: hue-rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(rainbowStyle);
     </script>
 </body>
 </html>
