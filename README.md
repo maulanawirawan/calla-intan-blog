@@ -12,7 +12,7 @@ A heartfelt family blog documenting the beautiful journey of Calla's growth alon
 
 ## 🚀 Live Demo
 
-Visit: [https://calla-intan-blog.netlify.app](https://calla-intan-blog.netlify.app)
+Visit: [https://maulanawirawan.github.io/calla-intan-blog]
 
 ## 📱 Install as App
 
